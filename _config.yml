@@ -1,0 +1,20 @@
+# Site settings
+author: Will Studabaker
+title: Variables and Riffs
+header-img: img/home-bg.png
+email: will.studabaker@gmail.com
+copyright_name: Will Studabaker
+description: > # this means to ignore newlines until "baseurl:"
+  A musician's foray into code
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  silverFactory
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
