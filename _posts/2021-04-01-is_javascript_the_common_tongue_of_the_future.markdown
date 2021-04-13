@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Is Javascript the "Common Tongue" of the Future?"
-date:       2021-04-01 15:51:35 +0000
+title:      "Is Javascript the Common Tongue of the Future?"
+date:       2021-04-01 11:51:36 -0400
 permalink:  is_javascript_the_common_tongue_of_the_future
 ---
 
