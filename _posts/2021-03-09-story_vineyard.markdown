@@ -1,13 +1,16 @@
 ---
 layout: post
 title:      "Story Vineyard"
-date:       2021-03-09 15:01:55 +0000
+date:       2021-03-09 10:01:55 -0500
 permalink:  story_vineyard
 ---
 
 
   Story Vineyard is a graphical outlining tool, designed to give writers an easily digestible birds eye view of their project. It can be used for writing a novel, a screenplay, or other any domain utilizing a narrative structure. In the vineyard, a story is broken up into discrete chunks called scenes, which are represented graphically by the image of a vine. Each scene has three clickable areas: the grapes, the left red leaf, and the right red leaf. The grapes represent characters, the left red leaf represents themes, and the right red leaf represents plot points. When one of these is clicked, an info bubble will appear to show all the relevant data. The difference between plot points and themes is hazy and semantic, but in terms of this application: plot points are unique to a scene, whereas themes will pop up in different scenes over the course of the story.
+	
 	Above the canvas on which the scene graphics are drawn is a collection of tools for growing and navigating the vineyard. There is a menu for selecting a story or creating a new one. There are menus to select a theme or character, and the canvas will draw all the info bubbles in which the selected element is present. Other tools include buttons to move a scene around the canvas, as well as create new scenes and delete unwanted scenes. Characters, themes, and plot points also have buttons providing CRUD functionality.
+	
 	The process of writing this application felt quite different from the others I have completed. In past projects there always seemed to be some kind of snag, some little thing I was doing incorrectly that would lead to hours of searching StackExchange and head scratching. I didn’t hit any of those snags this time, which was a great feeling! However this project took about a week longer than I had anticipated.The user stories that I had written for this project all seemed easy to implement, but ended up being more involved and time consuming than I had expected. Which brings me to my resolution to plan much more thoroughly in the future.
+	
 	In my database, themes and plot points share a model: meta_content, which just has a column for the content and a column called theme_or_pp to differentiate their use and depiction on the front end. Characters are a separate model with just a name attribute, which I realized much too late could’ve been folded into the meta_content model. I was locked into thinking about the application from the user’s perspective, where obviously characters and themes are entirely separate. And thinking about expanding the project down the road characters would certainly be given more attributes and use cases that would necessitate using a separate model. However for the more limited scope of this project, wrapping characters up in the meta_content model would’ve saved me from having to write separate forms on the front end, and routes and controllers on the back end. Best practices are called so for a reason, and if I had pseudo-coded even half of my project I’m sure I would’ve realized that restructuring my models was an expedient choice.
 
